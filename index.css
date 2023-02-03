@@ -99,3 +99,21 @@ body{
     border-radius: 10px;
 }
 
+.quote{
+   margin-top: 40px;
+   background-color:#1F2937;
+   text-align: center;
+   padding: 40px;
+}
+
+.quote > blockquote{
+    font-style: italic;
+    font-size: larger;
+    color: white;
+}
+
+.quote > p{
+    font-size: larger;
+    color: white;
+}
+
