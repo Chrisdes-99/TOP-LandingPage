@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,100;1,9..144,400;1,9..144,700;1,9..144,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+}
+
+.landing{
+    background-color: #1F2937;
+}
+
+.navbar,.eachLink{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282d34;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navImage{
+    flex: 1;
+}
+
+.navImage > img{
+    border-radius: 30px;
+}
+
+.navLinks{
+    flex: 1;
+}
+
+.navLink{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-right: 20px;
+    flex: auto;
+}
+
+.mainLanding{
+    margin-top: 50px;
+    background-color: #1F2937;
+    display: flex;
+    padding-bottom: 50px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.title{
+    flex: 1;
+    text-align: center;
+    color: white;
+    padding-left: 50px;
+}
+
+.mainLanding > p{
+    color:whitesmoke;
+}
+
+.button{
+    font-family: 'Fraunces', serif;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.landingImage{
+    flex: 1;
+}
+
+.landingImage >img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 40px;
+}
+
+.basicInfo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+.item{
+    flex:1;
+    background-color: #282d34;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
