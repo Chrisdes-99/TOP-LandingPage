@@ -57,11 +57,12 @@ body{
     text-align: center;
     color: white;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
-.mainLanding > p{
+.title > p{
     color:whitesmoke;
-    line-height: 10;
+    line-height: 2;
 }
 
 .button{
@@ -74,6 +75,7 @@ body{
 
 .landingImage{
     flex: 1;
+    margin: 50px;
 }
 
 .landingImage >img{
@@ -81,9 +83,11 @@ body{
     margin-right: auto;
     display: block;
     border-radius: 40px;
+    max-width: 305px;
+    max-height: 350px;
 }
 
-.basicInfo{
+.Attraction{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -127,12 +131,14 @@ body{
     align-items: center;
     margin: 50px;
     /*background-color: rgb(193, 177, 153);*/
-    background-color: rgb(146, 123, 92);
+    background-color: rgb(16, 30, 101);
+    border-radius: 10px;
 }
 
 .signUpText,.signUpButton{
     flex: 1;
     padding: 30px;
+    color: white;
 }
 
 .signUpButton > button{
@@ -150,4 +156,10 @@ body{
     padding: 20px;
     color: white;
 }
+
+@media (max-width: 800px) {
+    .Attraction,.mainLanding,.signUp {
+      flex-direction: column;
+    }
+  }
 
