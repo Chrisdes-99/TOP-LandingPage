@@ -7,29 +7,20 @@ body{
     background-color: #1F2937;
 }
 
-.title{
+.signUpCard{
     text-align: center;
-    color: white;
-}
-
-.title > img{
-    border-radius: 30px;
-}
-
-.login{
     display: block;
-    width: 50%;
     margin: auto;
+    width: 50%;
     background-color: white;
-    text-align: center;
     padding: 20px;
     border-radius: 10px;
     color: #1F2937;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
-form{
-    margin-top: 20px;
+img{
+    border-radius: 30px;
 }
 
 input{
@@ -40,6 +31,7 @@ input{
 }
 
 input[type =submit]{
+    margin-top: 20px;
     font-size: medium;
     border: none;
     border-radius: 10px;
@@ -50,31 +42,7 @@ input[type =submit]{
     cursor: pointer;
 }
 
-.footer{
-    color: #1F2937;
-    font-size: smaller;
-    display: grid;
-    grid-template-columns: repeat(2,.2fr);
-    justify-content: center;
-    align-items: center;
-}
-
-a:visited{
-    color: #1F2937;
-}
-
-.password-container{
-    position: relative;
-  }
-  .fa-eye,.fa-eye-slash{
-    position: absolute;
-    top: 28%;
-    right: 10%;
-    cursor: pointer;
-    color: black;
-  }
-
-  .iconBar{
+.iconBar{
     display: grid; 
     grid-template-columns: repeat(3, 0.2fr);
     justify-content: center;
@@ -102,8 +70,18 @@ a:visited{
   margin-left: .25em;
 }
 
+#footer{
+    margin-top: 30px;
+}
+
+#footer > a,#footer > a:visited{
+    color: #1F2937;
+}
+
+
+
   @media (max-width: 1300px) {
-      .iconBar{
+      .footer,.iconBar{
         grid-template-columns: repeat(1,.2fr);
         row-gap: 15px;
     }
