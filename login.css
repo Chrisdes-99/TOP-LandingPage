@@ -7,19 +7,29 @@ body{
     background-color: #1F2937;
 }
 
-.loginCard{
-    margin-top:50px;
+.title{
+    text-align: center;
+    color: white;
+}
+
+.title > img{
+    border-radius: 30px;
 }
 
 .login{
     display: block;
-    margin: auto;
     width: 50%;
+    margin: auto;
     background-color: white;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     color: #1F2937;
+    margin-top: 50px;
+}
+
+form{
+    margin-top: 20px;
 }
 
 input{
