@@ -165,9 +165,14 @@ body{
     font-size: larger;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     .Attraction,.mainLanding,.signUp {
       flex-direction: column;
     }
   }
+
+#login{
+    border-left: 1px white solid;
+    color: aliceblue;
+}
 

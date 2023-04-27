@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,100;1,9..144,400;1,9..144,700;1,9..144,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    background-color: #1F2937;
+}
+
+.loginCard{
+    margin-top:50px;
+}
+
+.login{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+}
+
+input[type =submit]{
+    font-size: medium;
+    background-color: rgb(95, 95, 95);
+    border: none;
+    border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.footer{
+    color: rgb(16, 30, 101);;
+    font-size: smaller;
+    display: grid;
+    grid-template-columns: repeat(2,.2fr);
+    justify-content: center;
+    align-items: center;
+}
+
+a:visited{
+    color: rgb(16, 30, 101);;
+}
+
+.password-container{
+    position: relative;
+  }
+  .fa-eye,.fa-eye-slash{
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    cursor: pointer;
+    color: black;
+  }
+
+.iconBar{
+    display: grid;
+    grid-template-columns: (3,.2fr);
+}
+
+  @media (max-width: 1300px) {
+      .footer{
+        grid-template-columns: repeat(1,.2fr);
+        row-gap: 15px;
+    }
+  }
