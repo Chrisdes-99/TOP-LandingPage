@@ -17,26 +17,30 @@ body{
     width: 50%;
     background-color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
+    color: #1F2937;
 }
 
 input{
     width: 80%;
     padding: 10px;
+    border-radius: 5px;
+    border:1px solid black;
 }
 
 input[type =submit]{
     font-size: medium;
-    background-color: rgb(95, 95, 95);
     border: none;
     border-radius: 10px;
-    border-radius: 10px;
     color: white;
+    font-family: 'Fraunces', serif;
+    width: 83%;
+    background-color: #1F2937;
 }
 
 .footer{
-    color: rgb(16, 30, 101);;
+    color: #1F2937;
     font-size: smaller;
     display: grid;
     grid-template-columns: repeat(2,.2fr);
@@ -45,7 +49,7 @@ input[type =submit]{
 }
 
 a:visited{
-    color: rgb(16, 30, 101);;
+    color: #1F2937;
 }
 
 .password-container{
@@ -59,13 +63,36 @@ a:visited{
     color: black;
   }
 
-.iconBar{
-    display: grid;
-    grid-template-columns: (3,.2fr);
+  .iconBar{
+    display: grid; 
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
 }
 
   @media (max-width: 1300px) {
-      .footer{
+      .footer,.iconBar{
         grid-template-columns: repeat(1,.2fr);
         row-gap: 15px;
     }
