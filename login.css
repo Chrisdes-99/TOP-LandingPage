@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,100;1,9..144,400;1,9..144,700;1,9..144,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    background-color: #1F2937;
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.title > img{
+    border-radius: 30px;
+}
+
+.login{
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #1F2937;
+    margin-top: 50px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid black;
+}
+
+input[type =submit]{
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Fraunces', serif;
+    width: 83%;
+    background-color: #1F2937;
+}
+
+.footer{
+    color: #1F2937;
+    font-size: smaller;
+    display: grid;
+    grid-template-columns: repeat(2,.2fr);
+    justify-content: center;
+    align-items: center;
+}
+
+a:visited{
+    color: #1F2937;
+}
+
+.password-container{
+    position: relative;
+  }
+  .fa-eye,.fa-eye-slash{
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    cursor: pointer;
+    color: black;
+  }
+
+  .iconBar{
+    display: grid; 
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+  @media (max-width: 1300px) {
+      .footer,.iconBar{
+        grid-template-columns: repeat(1,.2fr);
+        row-gap: 15px;
+    }
+  }
