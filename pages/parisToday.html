@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris Today</title>
+    <link rel="stylesheet" href="/styles/parisToday.css" />
+  </head>
+  <body onload="displayWeather()">
+    <div class="navbar">
+      <div class="navImage">
+        <a href="/index.html"
+          ><img src="/images/NotreDameLogo.jpg" width="60" height="60"
+        /></a>
+      </div>
+      <div class="navLinks">
+        <div class="eachLink">
+          <a href="" class="navLink">The Mission</a>
+          <a href="pages/parisToday.html" class="navLink">Paris Today</a>
+          <a href="" class="navLink">Contact</a>
+          <a href="pages/login.html" class="navLink" id="login">Log In</a>
+        </div>
+      </div>
+    </div>
+    <h1 style="color: white">Today in Paris</h1>
+    <div class="WeatherCard"></div>
+    <script src="/parisToday.js"></script>
+  </body>
+</html>
