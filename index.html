@@ -9,7 +9,7 @@
     <title>Paris Exploration Guide</title>
   </head>
 
-  <body>
+  <body onload="displayWeather()">
     <div class="landing">
       <div class="navbar">
         <div class="navImage">
@@ -18,7 +18,6 @@
         <div class="navLinks">
           <div class="eachLink">
             <a href="" class="navLink">The Mission</a>
-            <a href="pages/parisToday.html" class="navLink">Paris Today</a>
             <a href="" class="navLink">Contact</a>
             <a href="/pages/login.html" class="navLink" id="login">Log In</a>
           </div>
@@ -59,6 +58,22 @@
     </div>
 
     <br />
+
+    <h2 style="text-align: center">Explore Paris!</h2>
+    <div class="exploreCard">
+      <div class="Card">
+        <a href=""><h3>Things to Do</h3></a>
+      </div>
+      <div class="Card">
+        <a href=""><h3>Ways to Get Around</h3></a>
+      </div>
+      <div class="Card">
+        <a href=""><h3>Wine and Dine</h3></a>
+      </div>
+      <div class="Card">
+        <a href=""><h3>Hotels</h3></a>
+      </div>
+    </div>
 
     <h2 style="text-align: center">Popular Attractions</h2>
 
@@ -120,6 +135,26 @@
       </div>
     </div>
 
+    <div class="exploreGrid">
+      <!--<div class="WeatherCard"></div>-->
+      <div class="exploreImg">
+        <img
+          src="images/roses-g3ceaf6cef_1280.jpg"
+          alt="Roses"
+          width="400"
+          height="400"
+          id="rose"
+        />
+      </div>
+      <div class="explore">
+        <h2>It's Spring Time!</h2>
+        <p>
+          Explore the many festivies across Paris coming this Spring season!
+        </p>
+        <button id="button">Explore</button>
+      </div>
+    </div>
+
     <div class="quote">
       <blockquote
         cite="https://www.veranda.com/travel/g30296562/quotes-on-paris/"
@@ -152,5 +187,6 @@
     <div class="footer">
       <p>Created By Christopher De Santiago</p>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

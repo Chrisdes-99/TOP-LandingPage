@@ -10,9 +10,10 @@ body{
     background-color: #1F2937;
 }
 
-.navbar,.eachLink{
+.navbar{
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content:flex-start;
     background-color: #282d34;
@@ -20,8 +21,15 @@ body{
     padding-bottom: 10px;
 }
 
+.eachLink{
+    display: grid;
+    grid-template-columns: repeat(3,.2fr);
+    justify-content: end;
+    align-items: center;
+}
+
 .navImage{
-    flex: 1;
+   /*flex: 1;*/
     padding-left: 40px;
 }
 
@@ -30,9 +38,9 @@ body{
     float: left;
 }
 
-.navLinks{
+/*.navLinks{
     flex: 1;
-}
+}*/
 
 .navLink{
     text-decoration: none;
@@ -45,8 +53,7 @@ body{
 .mainLanding{
     background-color: #1F2937;
     display: flex;
-    padding-bottom: 50px;
-
+    padding-bottom: 20px;
     justify-items: center;
     align-items: center;
 }
@@ -62,7 +69,7 @@ body{
 .title > p{
     color:whitesmoke;
     line-height: 2;
-    font-size: larger;
+   
 }
 
 .button{
@@ -71,7 +78,7 @@ body{
     padding: 10px 20px  10px 20px;
     border-radius: 10px;
     border-style: none;
-    font-size: larger;
+
 }
 
 .landingImage{
@@ -89,42 +96,42 @@ body{
 }
 
 .Attraction{
-    display: flex;
+    display: grid;
     text-align: center;
+    grid-template-columns: repeat(4,.1fr);
     justify-content: center;
     align-items: center;
-    gap: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    margin: 20px;
+    margin: 20px 20px 50px 20px;
+    column-gap: 15px;
 }
 
 .item{
-    flex:1;
     color: black;
 }
 
 .item > img{
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .quote{
-   margin-top: 40px;
-   margin-bottom: 40px;
+   margin-top: 20px;
+   margin-bottom: 20px;
    background-color:#1F2937;
    text-align: center;
-   padding: 100px;
+   padding: 30px;
 }
 
 .quote > blockquote{
     font-style: italic;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     font-weight: bold;
 }
 
 .quote > p{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-weight: bold;
 }
@@ -169,10 +176,92 @@ body{
     .Attraction,.mainLanding,.signUp {
       flex-direction: column;
     }
+    .Attraction{
+        grid-template-columns: repeat(1,.1fr);
+    }
   }
 
 #login{
     border-left: 1px white solid;
     color: aliceblue;
 }
+
+.WeatherCard{
+    text-align: center;
+    /*display: grid;
+    grid-template-columns: repeat(2,.1fr);
+    column-gap: 5px;*/
+    display: block;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #1F2937;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.WeatherCard > .dateGrid{
+    display: grid;
+    grid-template-columns: repeat(2,.2fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreGrid{
+    display: grid;
+    grid-template-columns: repeat(2,.4fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 80px 0px 80px;
+}
+
+#button{
+    font-family:'Fraunces', serif;
+    background-color:#1F2937;
+    padding: 10px 20px  10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    opacity: .9;
+}
+
+.exploreImg{
+    display: block;
+    margin: auto;
+}
+
+#rose{
+    border: .1px solid black;
+    border-radius: 10px;
+}
+
+.exploreCard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    column-gap: 10px;
+    margin: 20px 20px 80px 20px;
+}
+
+.Card{
+    padding: 10px;
+    border-radius: 100px;
+    opacity: .7;
+    border: 1px solid #1F2937;
+    background-color: #282d34;
+}
+
+.Card > a{
+    text-decoration: none;
+    color: white
+}
+
 
