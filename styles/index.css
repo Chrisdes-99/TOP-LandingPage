@@ -21,34 +21,40 @@ body{
     padding-bottom: 10px;
 }
 
-.eachLink{
-    display: grid;
-    grid-template-columns: repeat(3,.2fr);
-    justify-content: end;
-    align-items: center;
-}
-
 .navImage{
-   /*flex: 1;*/
-    padding-left: 40px;
-}
+    /*flex: 1;*/
+     padding-left: 40px;
+ }
+ 
+ .navImage > img{
+     border-radius: 30px;
+     float: left;
+ }
 
-.navImage > img{
-    border-radius: 30px;
-    float: left;
-}
-
-/*.navLinks{
-    flex: 1;
-}*/
-
-.navLink{
+ .navLink{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin-right: 20px;
     flex: auto;
 }
+
+.eachLink{
+    display: grid;
+    grid-template-columns: repeat(4,.2fr);
+    justify-content: end;
+    align-items: center;
+}
+
+#login{
+    border-left: 1px white solid;
+    color: aliceblue;
+}
+
+/*.navLinks{
+    flex: 1;
+}*/
+
 
 .mainLanding{
     background-color: #1F2937;
@@ -73,15 +79,6 @@ body{
    
 }
 
-.button{
-    font-family: 'Fraunces', serif;
-    background-color: antiquewhite;
-    padding: 10px 20px  10px 20px;
-    border-radius: 10px;
-    border-style: none;
-
-}
-
 .landingImage{
     flex: 1;
     margin: 50px;
@@ -96,6 +93,76 @@ body{
     max-height: 100%;
 }
 
+.mainBody{
+    margin: 40px;
+}
+
+.exploreGrid{
+    display: grid;
+    grid-template-columns: repeat(2,.4fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 80px 0px 80px;
+}
+
+.exploreImg{
+    display: block;
+    margin: auto;
+}
+
+#rose{
+    border: .1px solid black;
+    border-radius: 10px;
+}
+
+.separator {
+    display: flex;
+    align-items:center;
+    text-align: center;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #000;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+.exploreCard{
+    display: grid;
+    grid-template-columns: repeat(4,.4fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 20px 80px 20px;
+}
+
+.Card{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #1F2937;
+    background-color: #1f252f;
+}
+
+.Card > a{
+    text-decoration: none;
+    color: white
+}
+
+.Card:hover{
+    background-color:#4b6492;
+}
+
 .Attraction{
     display: grid;
     text-align: center;
@@ -104,12 +171,12 @@ body{
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    margin: 20px 20px 50px 20px;
+    margin: 20px 20px 40px 20px;
     column-gap: 15px;
 }
 
 .caption{
-    background-color: #1F2937;
+    background-color: #1f252f;
     margin-top: -25px;
     padding: 15px;
     opacity: 1;
@@ -125,24 +192,42 @@ body{
     border-radius: 10px 10px 0px 0px;
 }
 
+.WeatherCard{
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+.weatherGrid{
+    display: grid;
+    grid-template-columns: repeat(2,.3fr);
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.weatherGrid > .weatherCircle2{
+    border-right: 0px solid white;
+}
+
 .quote{
    margin-top: 20px;
    margin-bottom: 20px;
-   background-color:#1F2937;
    text-align: center;
    padding: 30px;
+   color: #000;
 }
 
 .quote > blockquote{
     font-style: italic;
     font-size: 20px;
-    color: white;
     font-weight: bold;
 }
 
 .quote > p{
     font-size: 15px;
-    color: white;
     font-weight: bold;
 }
 
@@ -153,7 +238,7 @@ body{
     align-items: center;
     margin: 50px;
     /*background-color: rgb(193, 177, 153);*/
-    background-color: rgb(16, 30, 101);
+    background-color: #1F2937;
     border-radius: 10px;
 }
 
@@ -173,7 +258,7 @@ body{
 }
 
 .footer{
-    background-color:#1F2937;
+    background-color:#282d34;
     text-align: center;
     font-weight: bold;
     padding: 10px;
@@ -187,44 +272,26 @@ body{
     .Attraction{
         grid-template-columns: repeat(1,.1fr);
     }
+
+    .WeatherCard > .weatherGrid{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 5px;
+    }
+    .exploreGrid{
+        grid-template-columns: repeat(1,1fr);
+    }
   }
 
-#login{
-    border-left: 1px white solid;
-    color: aliceblue;
-}
 
-.WeatherCard{
-    text-align: center;
-    padding: 10px;
-    color: black;
+  .Button{
+    font-family: 'Fraunces', serif;
+    background-color: antiquewhite;
+    padding: 10px 20px  10px 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    border-style: none;
 }
 
-.weatherGrid{
-    display: grid;
-    grid-template-columns: repeat(2,.3fr);
-    column-gap: 5px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.weatherGrid > .weatherCircle2{
-    border-right: 1px solid black;
-}
-
-.exploreGrid{
-    display: grid;
-    grid-template-columns: repeat(2,.4fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 80px 0px 80px;
-}
-
-#button{
+.button{
     font-family:'Fraunces', serif;
     background-color:#1F2937;
     padding: 10px 20px  10px 20px;
@@ -233,59 +300,9 @@ body{
     border: none;
     color: white;
     opacity: .9;
-}
-
-.exploreImg{
-    display: block;
     margin: auto;
+    cursor: pointer;
+    font-size: 13px;
 }
 
-#rose{
-    border: .1px solid black;
-    border-radius: 10px;
-}
-
-.exploreCard{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    gap: 20px;
-    margin: 20px 20px 80px 20px;
-}
-
-.Card{
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #1F2937;
-    background-color: #282d34;
-}
-
-.Card > a{
-    text-decoration: none;
-    color: white
-}
-
-.separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .separator::before,
-  .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 2px solid #000;
-  }
-  
-  .separator:not(:empty)::before {
-    margin-right: .25em;
-  }
-  
-  .separator:not(:empty)::after {
-    margin-left: .25em;
-  }
 

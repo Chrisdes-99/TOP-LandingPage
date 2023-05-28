@@ -21,15 +21,10 @@ function createCard(data){
     const weatherCircle2 = document.createElement('div');
     weatherCircle.className = "weatherCircle2";
 
-
-    const header = document.createElement('h2');
-    header.innerText = "Right Now In Paris:"
-    header.className = "separator";
-
-    const time = document.createElement('h4');
+    const time = document.createElement('p');
     const date = document.createElement('p');
     const weather = document.createElement('h3');
-    const condition = document.createElement('h3');
+    const condition = document.createElement('p');
 
     const feelsLike = document.createElement('p');
     const humidity = document.createElement('p');
@@ -45,7 +40,8 @@ function createCard(data){
     const Date = objectTime.slice(6,10)+"-2023";
     let Time = objectTime.slice(-5);
 
-    date.innerText = "Currently, it is "+Time+" on "+Date;
+    time.innerText = Time;
+    date.innerText = Date;
 
     weather.innerText = data.current.temp_f+ " \u00B0F"+" / "+data.current.temp_c+" \u00B0C";
     condition.innerText = data.current.condition.text;
@@ -55,18 +51,17 @@ function createCard(data){
     humidity.innerText = "Humidity: " + data.current.humidity+"%";
     winds.innerText = "Wind: " + data.current.wind_mph+" mph";
 
-    const line = document.createElement('br');
-    weatherCard.appendChild(header);
     weatherCard.appendChild(weatherGrid);
     weatherGrid.appendChild(weatherCircle)
     weatherCircle.appendChild(weather);
     weatherCircle.appendChild(conditionIcon);
-    weatherCircle.appendChild(condition);
 
     weatherGrid.appendChild(weatherCircle2);
+    weatherCircle2.appendChild(condition);
     weatherCircle2.appendChild(feelsLike);
     weatherCircle2.appendChild(humidity);
     weatherCircle2.appendChild(winds);
 
+    weatherCard.appendChild(time)
     weatherCard.appendChild(date);
 }
