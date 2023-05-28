@@ -9,7 +9,7 @@
     <title>Paris Exploration Guide</title>
   </head>
 
-  <body>
+  <body onload="displayWeather()">
     <div class="landing">
       <div class="navbar">
         <div class="navImage">
@@ -18,7 +18,7 @@
         <div class="navLinks">
           <div class="eachLink">
             <a href="" class="navLink">The Mission</a>
-            <a href="" class="navLink">Paris Today</a>
+            <a href="#exploreCard" class="navLink">Explore Paris</a>
             <a href="" class="navLink">Contact</a>
             <a href="/pages/login.html" class="navLink" id="login">Log In</a>
           </div>
@@ -40,7 +40,7 @@
           </p>
           <br />
           <br />
-          <button class="button">
+          <button class="Button">
             <a
               href="/pages/signup.html"
               style="text-decoration: none; color: black"
@@ -52,7 +52,7 @@
           <img
             src="images/pexels-spencer-davis-4388221.jpg"
             width="500"
-            height="600"
+            height="500"
           />
         </div>
       </div>
@@ -60,97 +60,167 @@
 
     <br />
 
-    <h2 style="text-align: center">Popular Attractions</h2>
-
-    <br />
-
-    <div class="Attraction">
-      <div class="item">
-        <img
-          src="images/eiffel-tower-ge8174b562_1920.jpg"
-          width="300"
-          height="300"
-          alt=""
-        />
-        <h3>Effiel Tower</h3>
-        <p>
-          Standing as the heart of Paris, this more than 1,000 foot structure is
-          the cultural icon of France and a premier architectural piece of work.
-        </p>
-      </div>
-      <div class="item">
-        <img
-          src="images/cathedral-gfc9241a4a_1920.jpg"
-          alt=""
-          width="300"
-          height="300"
-        />
-        <h3>Notre Dame</h3>
-        <p>
-          Dedicated to the Virgin Mary, the medieval Catholic cathedral is
-          considered one of the finest works of French Gothic architecture.
-        </p>
-      </div>
-      <div class="item">
-        <img
-          src="images/building-gc9c5a30e9_1280.jpg"
-          alt=""
-          width="300"
-          height="300"
-        />
-        <h3>Louvre Muesem</h3>
-        <p>
-          The Louvre is the most visited muesem and is the home of the some
-          world's best works of art including the infamous painting, The Mona
-          Lisa.
-        </p>
-      </div>
-      <div class="item">
-        <img
-          src="images/arc-de-triomphe-g50d43a8cb_1920.jpg"
-          alt=""
-          width="300"
-          height="300"
-        />
-        <h3>Arc De Triomphe</h3>
-        <p>
-          The Arc De Triomphe stands to honor those who fought and died for
-          France in the French Revolution and Napoleonic Wars.
-        </p>
-      </div>
-    </div>
-
-    <div class="quote">
-      <blockquote
-        cite="https://www.veranda.com/travel/g30296562/quotes-on-paris/"
-      >
-        “A walk about Paris will provide lessons in history, beauty, and in the
-        point of life.”
-      </blockquote>
-      <p>~ Thomas Jefferson</p>
-    </div>
-
-    <div class="signUp">
-      <div class="signUpText">
-        <h3>Start planning your next Paris trip today!</h3>
-        <p>
-          For a personalized and interactive planner, sign up for free today!
-        </p>
+    <div class="mainBody">
+      <div class="quote">
+        <blockquote
+          cite="https://www.veranda.com/travel/g30296562/quotes-on-paris/"
+        >
+          “A walk about Paris will provide lessons in history, beauty, and in
+          the point of life.”
+        </blockquote>
+        <p>~ Thomas Jefferson</p>
       </div>
 
-      <div class="signUpButton">
-        <button>
-          <a
-            href="/pages/signup.html"
-            style="text-decoration: none; color: black"
-            >Sign Up</a
-          >
-        </button>
+      <br />
+
+      <h2 style="text-align: center" class="separator" id="exploreCard">
+        Explore Paris
+      </h2>
+      <br />
+      <div class="exploreCard">
+        <div class="Card">
+          <a href=""><h4>Things To Do</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>Hotels</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>Wine And Dine</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>Transportation</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>History</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>The City</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>Culture And Customs</h4></a>
+        </div>
+        <div class="Card">
+          <a href=""><h4>Sports</h4></a>
+        </div>
+      </div>
+
+      <h2 style="text-align: center" class="separator">Popular Attractions</h2>
+      <div class="Attraction">
+        <div class="item">
+          <img
+            src="images/eiffel-tower-ge8174b562_1920.jpg"
+            width="300"
+            height="300"
+            alt=""
+          />
+          <div class="caption">
+            <h3>Effiel Tower</h3>
+            <p>
+              Standing as the heart of Paris, this more than 1,000 foot
+              structure is the cultural icon of France and a premier
+              architectural piece of work.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="images/cathedral-gfc9241a4a_1920.jpg"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <div class="caption">
+            <h3>Notre Dame</h3>
+            <p>
+              Dedicated to the Virgin Mary, the medieval Catholic cathedral is
+              considered one of the finest works of French Gothic architecture.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="images/building-gc9c5a30e9_1280.jpg"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <div class="caption">
+            <h3>Louvre Muesem</h3>
+            <p>
+              The Louvre is the home of the some world's best works of art
+              including the infamous painting, The Mona Lisa.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="images/arc-de-triomphe-g50d43a8cb_1920.jpg"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <div class="caption">
+            <h3>Arc De Triomphe</h3>
+            <p>
+              The Arc De Triomphe stands to honor those who fought and died for
+              France in the French Revolution and Napoleonic Wars.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="button" style="display: block">See more</button>
+
+      <br />
+      <br />
+
+      <div class="exploreGrid">
+        <div class="exploreImg">
+          <img
+            src="images/roses-g3ceaf6cef_1280.jpg"
+            alt="Roses"
+            width="400"
+            height="400"
+            id="rose"
+          />
+        </div>
+        <div class="explore">
+          <h2>It's Spring Time!</h2>
+          <p>
+            Explore the many festivies across Paris coming this Spring season!
+          </p>
+          <button class="button">Explore</button>
+        </div>
+      </div>
+
+      <h2 style="text-align: center">Right Now In Paris:</h2>
+
+      <div class="WeatherCard"></div>
+
+      <div class="signUp">
+        <div class="signUpText">
+          <h3>Start planning your next Paris trip today!</h3>
+          <p>
+            Recieve a free, curated week itinerary featuring some of the most
+            iconic spots in Paris based on your travel style and interests
+          </p>
+        </div>
+
+        <div class="signUpButton">
+          <button>
+            <a
+              href="/pages/signup.html"
+              style="text-decoration: none; color: black"
+              >Sign Up</a
+            >
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="footer">
       <p>Created By Christopher De Santiago</p>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
